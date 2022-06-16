@@ -1,0 +1,553 @@
+
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+.contentwrapper{
+    padding:30px;
+}
+/* Hamburger Mobile Menu*/
+.toggle {
+    order:0;
+    cursor:pointer;
+    margin: 10px 10px 15px 0;
+}
+.bars{
+    background:#000000;
+    display: inline-block;
+    border-radius: 15px;
+    height: 3px;
+    position: relative;
+    width: 20px;
+}
+.bars::before, .bars::after {
+    background: #000000;
+    display: inline-block;
+    border-radius: 15px;
+    height: 3px;
+    position: absolute;
+    width: 20px;
+    content:"";
+}
+.bars::before {
+    top:5px;
+}
+.bars::after {
+    top:-5px;
+}
+
+/*Nav Styling*/
+ul.nav {
+    list-style-type:none;
+}
+
+li.nav {
+    display:none;
+    margin:30px;
+    padding:10px;
+    font-family:"Bebas Neue", Arial, sans-serif;
+    font-size:24px;
+    letter-spacing:2px;
+    border-bottom:3px solid #000000;
+    border-left:3px solid #000000;
+    order:1;
+    /*background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 87%, rgba(218,226,228,1) 100%);*/
+
+}
+
+/*Section and Column Styling*/
+
+section.bodytext {
+    padding:30px 60px 30px 60px;
+}
+
+.leftborder {
+    padding-left:30px;
+    margin:30px;
+}
+
+.twocolumn {
+    margin:30px;
+    width:100%;
+}
+
+.leftcolumn {
+    width:80%;
+    border:3px solid #000000;
+    padding:30px;
+    margin-bottom:30px;
+    background-color: rgba(24, 236, 241,0.2)
+}
+.rightcolumn {
+    width:80%;
+    border:3px solid #000000;
+    padding:30px;
+    background-color: rgba(24, 236, 241,0.2)
+}
+
+.leftcolumnalt {
+    width:80%;
+    border:3px solid #000000;
+    margin: 30px;
+    padding:30px;
+    background-color: rgba(8, 255, 94,0.2)
+}
+.rightcolumnalt {
+    width:80%;
+    border:3px solid #000000;
+    margin: 30px;
+    padding:30px;
+    background-color: rgba(8, 255, 94,0.2)
+}
+
+.leftcolumnalt2 {
+    width:80%;
+    border:3px solid #000000;
+    margin: 30px;
+    padding:30px;
+    background-color: rgba(224, 10, 247,0.2)
+}
+.rightcolumnalt2 {
+    width:80%;
+    border:3px solid #000000;
+    margin: 30px;
+    padding:30px;
+    background-color: rgba(224, 10, 247,0.2)
+}
+
+.leftcolumnblank{
+    width:25%;
+    margin:0 30px 0 0;
+}
+
+.rightcolumnblank{
+    width:25%;
+    margin:0;
+}
+
+/*footer styling*/
+footer {
+    background-color:#000000;
+    color:#FFFFFF;
+    padding:30px;
+    display:flex;
+}
+
+.footerleft{
+    flex:25%;
+    margin-right:25%;
+    font-family:"Raleway",Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.footerright{
+    flex:25%;
+    font-family:"Raleway",Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: right;
+}
+
+.footerlink {
+    color:#FFFFFF;
+}
+
+/*Headers and Text Stlying*/
+h1 {
+    font-family: "Bebas Neue", Arial, sans-serif;
+    font-size: 24pt;
+    padding:30px 0 0 30px;
+    margin:0;
+    letter-spacing:3px;
+} 
+
+h2 {
+    font-family:"Raleway", Arial, sans-serif;
+    font-size:36px;
+    text-decoration:bold;
+    padding-bottom:30px;
+    padding-top:30px;
+    /*border-left:3px solid #000000;
+    border-bottom:3px solid #000000;*/
+}
+
+h3 {
+    font-family:"Bebas Neue", arial, sans-serif;
+    font-size:24px;
+    letter-spacing:2px;
+    padding-bottom:5px;
+}
+
+h4 {
+    font-family:"Raleway", arial, sans-serif;
+    font-size:20px;
+    font-style:bold;
+    padding-bottom:5px;
+}
+h5 {
+    font-family:"Raleway", arial, sans-serif;
+    font-size:14px;
+    font-style:italic;
+    padding-bottom:10px;
+}
+
+h6{
+    font-family:"Bebas Neue", arial, sans-serif;
+    font-size:16px;
+    letter-spacing:2px;
+    padding-top:30px;
+}
+
+.subtitle {
+    font-family:"Raleway", Arial, sans-serif;
+    font-size:12pt;
+    padding:0 0 30px 30px;
+    margin:0;
+    font-style:italic;
+    font-weight:300px;
+}
+p,li {
+    font-family:"Raleway", Arial, sans-serif;
+    font-size:18px;
+    line-height: 1.5em;
+    font-weight:300;
+}
+
+/*HRs*/
+
+hr {
+    margin:0;
+}
+
+hr.header1 {
+    background-color:#18ECF1;
+    border:1px solid #18ECF1;
+    height:30px;
+}
+
+hr.header2 {
+    background-color: #000000;
+    border:1px solid #000000;
+    height:5px;
+    margin-bottom:15px;
+}
+
+
+/*Link styles*/
+a.links {   
+    font-weight:300px;
+    color:#000000;
+}
+
+/*Party-Specific*/
+li.chardesclist{
+    font-size:14px;
+    padding-right:10px;
+}
+li.char {
+    font-family:"Bebas Neue",Arial, Helvetica, sans-serif;
+    font-size:24px;
+    letter-spacing: 3px;
+    padding-left:10px;
+}
+ul.sig{
+    padding:10px 30px 30px 30px;
+    border-top:3px solid #000000;
+}
+
+li.sig{
+    list-style-type: square;
+    font-size:14px;
+}
+.profilepic {
+    height:150px;
+    float:left;
+    padding-right:20px;
+    padding-bottom:10px;
+}
+p.chardesc {
+    font-family:"Raleway", Arial, sans-serif;
+    font-size:14px;
+    line-height: 1.5em;
+    font-weight:600;
+    padding:15px;
+    background-color: #ffffff;
+    border-left:3px solid #000000;
+    border-bottom:3px solid #000000;
+}
+ul.chardesclist {
+    padding-left:15px;
+}
+
+.likes {
+    flex:50%;
+    margin-right:15px;
+}
+
+.dislikes {
+    flex:50%;
+}
+
+/*Battlelog-Specific*/
+.battles{
+    background-color: rgba(24, 236, 241,0.2);
+    border:3px solid #000000;
+    padding:30px;
+    margin-bottom:30px;
+}
+
+.battlebox{
+    padding:30px;
+    background-color:#ffffff;
+    color:#000000;
+    border:3px solid #000000;
+}
+
+.battlecolumns{
+    display:flex;
+}
+
+.columnheader{
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+.outcome{
+    padding-top:30px;
+
+}
+p.outcome{
+    font-family:"Bebas Neue", Arial, sans-serif;
+    font-size:36px;
+    padding:0;
+}
+
+/*Image Styling*/
+.logo {
+    display:inline;
+    padding:30px;
+    float:left;
+    height:125px;
+    width:125px;
+
+}
+.picwrapper{
+    justify-content: center;
+    text-align: center;
+}
+
+.pic {
+    width:75%;
+    margin:30px;
+    padding:30px 30px 15px 15px;
+    border-left:3px solid #000000;
+    border-bottom:3px solid #000000;
+    
+}
+
+.profilepic{
+    width:100px;
+    height:100px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+    padding-bottom:10px;
+  }
+
+/* TABLET MENU STYLES */
+@media all and (min-width: 520px){
+
+    /* Header Styling */
+
+    /* Title */
+    h1 {
+        Font-size:80pt; 
+    }
+    .subtitle {
+        font-family:"Raleway", Arial, sans-serif;
+        font-size:24px;
+        padding:0 0 50px 30px;
+        margin:0;
+        font-style:italic;
+        font-weight:300px;
+    }
+    h2 {
+        font-family:"Raleway", Arial, sans-serif;
+        font-size:36px;
+        text-decoration:bold;
+        padding-bottom:15px;
+        padding-top:30px;
+        /*border-left:3px solid #000000;
+        border-bottom:3px solid #000000;*/
+    }
+    h3 {
+        font-family:"Bebas Neue", arial, sans-serif;
+        font-size:30px;
+        letter-spacing:2px;
+        padding-bottom:5px;
+    }
+    /* Navigation */
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items:center;
+        list-style-type: none;
+        width: 100%;
+        padding-left:30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin:0;
+    }
+
+    li.nav {
+        margin:10px;
+        padding:15px;
+        display: inline;
+        order:2;
+        font-family:"Bebas Neue", Arial, sans-serif;
+        font-size:20px;
+        letter-spacing:2px;
+        border-bottom:3px solid #000000;
+        border-left:3px solid #000000;
+    }
+   
+    .toggle {
+        order: 0;
+    }
+    .profilepic{
+        width:150px;
+        height:150px;
+    }
+    .logo {
+        width:250px;
+        height:250px;
+        display:inline;
+        padding:30px;
+        float:left;
+    
+    }
+    .twocolumn {
+        display:flex;
+        margin:30px;
+
+    }
+    
+    .leftcolumn {
+        flex:50%;
+        border:3px solid #000000;
+        margin:30px;
+        padding:30px;
+        background-color: rgba(24, 236, 241,0.2)
+    }
+    .rightcolumn {
+        flex:50%;
+        border:3px solid #000000;
+        margin:30px;
+        padding:30px;
+        background-color: rgba(24, 236, 241,0.2)
+    }
+    
+    .leftcolumnalt {
+        flex:50%;
+        border:3px solid #000000;
+        margin:30px;
+        padding:30px;
+        background-color: rgba(8, 255, 94,0.2)
+    }
+    .rightcolumnalt {
+        flex:50%;
+        border:3px solid #000000;
+        margin: 30px;
+        padding:30px;
+        background-color: rgba(8, 255, 94,0.2)
+    }
+    
+    .leftcolumnalt2 {
+        flex:50%;
+        border:3px solid #000000;
+        margin: 30px;
+        padding:30px;
+        background-color: rgba(224, 10, 247,0.2)
+    }
+    .rightcolumnalt2 {
+        flex:50%;
+        border:3px solid #000000;
+        margin: 30px;
+        padding:30px;
+        background-color: rgba(224, 10, 247,0.2)
+    }
+    
+    .leftcolumnblank{
+        flex:25%;
+        margin:0 30px 0 0;
+    }
+    
+    .rightcolumnblank{
+        flex:25%;
+        margin:0;
+    }
+    ul.chardesclist {
+        border-left:5px solid #000000;
+        padding-left:30px;
+        margin-left:30px;
+    }
+    li.chardesclist{
+        font-size:14px;
+        padding-right:10px;
+    }
+    .likes {
+        flex:25%;
+        margin-right:30px;
+    }
+    
+    .dislikes {
+        flex:25%;
+    }
+    
+}
+
+  @media all and (min-width:768px){
+      /*nav styling*/
+        nav {
+            padding:30px 30px 30px 0;
+            border-bottom:3px solid #000000;
+        }
+
+        ul.nav {
+            list-style-type:none;
+        }
+
+        li.nav {
+            display:inline;
+            margin:30px;
+            padding:10px;
+            font-family:"Bebas Neue", Arial, sans-serif;
+            font-size:24px;
+            letter-spacing:2px;
+            border-bottom:3px solid #000000;
+            border-left:3px solid #000000;
+            order:0;
+            /*background: rgb(255,255,255);
+            background: linear-gradient(180deg, rgba(255,255,255,1) 87%, rgba(218,226,228,1) 100%);*/
+
+        }
+        a.nav {
+            text-decoration: none;
+            font-style:bold;
+            color:#000000;
+        }
+        .toggle {
+            display:none;
+        }
+        .leftborder {
+            border-left:5px solid #000000;
+            padding-left:30px;
+            margin-left:30px;
+        }
+
+  }
