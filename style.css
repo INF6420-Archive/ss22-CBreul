@@ -156,7 +156,7 @@ footer {
 /*Headers and Text Stlying*/
 h1 {
     font-family: "Bebas Neue", Arial, sans-serif;
-    font-size: 24pt;
+    font-size: 30pt;
     padding:30px 0 0 30px;
     margin:0;
     letter-spacing:3px;
@@ -164,7 +164,7 @@ h1 {
 
 h2 {
     font-family:"Raleway", Arial, sans-serif;
-    font-size:36px;
+    font-size:22pt;
     text-decoration:bold;
     padding-bottom:30px;
     padding-top:30px;
@@ -174,29 +174,31 @@ h2 {
 
 h3 {
     font-family:"Bebas Neue", arial, sans-serif;
-    font-size:24px;
+    font-size:18pt;
     letter-spacing:2px;
     padding-bottom:5px;
 }
 
 h4 {
     font-family:"Raleway", arial, sans-serif;
-    font-size:20px;
+    font-size:16pt;
     font-style:bold;
     padding-bottom:5px;
 }
-h5 {
+span.charsubtitle {
     font-family:"Raleway", arial, sans-serif;
-    font-size:14px;
+    font-size:16pt;
     font-style:italic;
     padding-bottom:10px;
+    display:block;
 }
 
-h6{
+span.npcoutcome{
     font-family:"Bebas Neue", arial, sans-serif;
-    font-size:16px;
+    font-size:16pt;
     letter-spacing:2px;
-    padding-top:30px;
+    margin-top:10px;
+    display:block;
 }
 
 .subtitle {
@@ -209,9 +211,10 @@ h6{
 }
 p,li {
     font-family:"Raleway", Arial, sans-serif;
-    font-size:18px;
+    font-size:14pt;
     line-height: 1.5em;
     font-weight:300;
+    padding-bottom:5px;
 }
 
 /*HRs*/
@@ -242,12 +245,12 @@ a.links {
 
 /*Party-Specific*/
 li.chardesclist{
-    font-size:14px;
+    font-size:14pt;
     padding-right:10px;
 }
 li.char {
     font-family:"Bebas Neue",Arial, Helvetica, sans-serif;
-    font-size:24px;
+    font-size:14pt;
     letter-spacing: 3px;
     padding-left:10px;
 }
@@ -258,7 +261,7 @@ ul.sig{
 
 li.sig{
     list-style-type: square;
-    font-size:14px;
+    font-size:12pt;
 }
 .profilepic {
     height:150px;
@@ -268,7 +271,7 @@ li.sig{
 }
 p.chardesc {
     font-family:"Raleway", Arial, sans-serif;
-    font-size:14px;
+    font-size:14pt;
     line-height: 1.5em;
     font-weight:600;
     padding:15px;
@@ -296,6 +299,11 @@ ul.chardesclist {
     padding:30px;
     margin-bottom:30px;
 }
+li.battlelist{
+    margin-left:30px;
+    font-size:14pt;
+
+}
 
 .battlebox{
     padding:30px;
@@ -306,6 +314,7 @@ ul.chardesclist {
 
 .battlecolumns{
     display:flex;
+    padding-bottom:10px;
 }
 
 .columnheader{
@@ -319,7 +328,7 @@ ul.chardesclist {
 }
 p.outcome{
     font-family:"Bebas Neue", Arial, sans-serif;
-    font-size:36px;
+    font-size:24pt;
     padding:0;
 }
 
@@ -369,7 +378,7 @@ p.outcome{
     }
     .subtitle {
         font-family:"Raleway", Arial, sans-serif;
-        font-size:24px;
+        font-size:24pt;
         padding:0 0 50px 30px;
         margin:0;
         font-style:italic;
@@ -377,7 +386,7 @@ p.outcome{
     }
     h2 {
         font-family:"Raleway", Arial, sans-serif;
-        font-size:36px;
+        font-size:36pt;
         text-decoration:bold;
         padding-bottom:15px;
         padding-top:30px;
@@ -386,9 +395,22 @@ p.outcome{
     }
     h3 {
         font-family:"Bebas Neue", arial, sans-serif;
-        font-size:30px;
+        font-size:30pt;
         letter-spacing:2px;
         padding-bottom:5px;
+    }
+    p,li {
+        font-family:"Raleway", Arial, sans-serif;
+        font-size:18pt;
+        line-height: 1.5em;
+        font-weight:300;
+        padding-bottom:5px;
+    }
+    li.char {
+        font-family:"Bebas Neue",Arial, Helvetica, sans-serif;
+        font-size:22pt;
+        letter-spacing: 3px;
+        padding-left:10px;
     }
     /* Navigation */
     nav {
@@ -410,7 +432,7 @@ p.outcome{
         display: inline;
         order:2;
         font-family:"Bebas Neue", Arial, sans-serif;
-        font-size:20px;
+        font-size:20pt;
         letter-spacing:2px;
         border-bottom:3px solid #000000;
         border-left:3px solid #000000;
@@ -497,7 +519,7 @@ p.outcome{
         margin-left:30px;
     }
     li.chardesclist{
-        font-size:14px;
+        font-size:12pt;
         padding-right:10px;
     }
     .likes {
@@ -527,7 +549,7 @@ p.outcome{
             margin:30px;
             padding:10px;
             font-family:"Bebas Neue", Arial, sans-serif;
-            font-size:24px;
+            font-size:24pt;
             letter-spacing:2px;
             border-bottom:3px solid #000000;
             border-left:3px solid #000000;
