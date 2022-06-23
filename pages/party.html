@@ -4,325 +4,401 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Crew</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    <!--Begin title/header-->
-    <section>
-        <img src="/images/TempLogo.jpg" height="80" width="80" alt="An image of three red first-edition Dungeons and Dragons manuals on a white tablecloth, next to a blue bag of dice. The dice are spilling out of the bag, artfully arranged by the edge of the manuals.">
-        <h1>Thunderbuns</h1>
-        <h2>Primal Fear in Nettep: The Quest for Knot's Tree</h2>
-    </section>
-    <!--Begin Nav Bar-->
-    <hr>
-    <nav>
-        <ul>
-            <li><a href="/index.html">About</a></li>
-            <li><a href="/pages/party.html">The Party</a></li>
-            <li><a href="/pages/npcs.html">NPCs and Monsters</a></li>
-            <li><a href="/pages/battlelog.html">Battle Log</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <!--Begin title/header-->
+        <section>
+            <img src="/images/TempLogo.jpg" class="logo" alt="An image of three red first-edition Dungeons and Dragons manuals on a white tablecloth, next to a blue bag of dice. The dice are spilling out of the bag, artfully arranged by the edge of the manuals.">
+            <h1>Thunderbuns</h1>
+            <p class="subtitle">Primal Fear in Nettep: The Quest for Knot's Tree</p>
+        </section>
+        <!--Begin Nav Bar-->
+        <hr class="header1">
+        <hr class="header2">
+        <nav>
+            <ul class="nav">
+                <li class="nav"><a class="nav" href="/index.html">About</a></li>
+                <li class="nav"><a class="nav" href="/pages/party.html">The Party</a></li>
+                <li class="nav"><a class="nav" href="/pages/npcs.html">NPCs and Monsters</a></li>
+                <li class="nav"><a class="nav" href="/pages/battlelog.html">Battle Log</a></li>
+            </ul>
+        </nav>
+    </header>
     <!--Begin party image Banner-->
-    <img src="/images/PartyPic_2.jpg" height="675" width="1200" alt="A digital illustration of the party members standing in a forest. From left to right: Knot, a tall human-looking tree with deer antlers gestures with an open hand. Freja, a tall blue-green half orc stands with her bow at the ready, muscled legs poised for battle. Siw, a celestial paladin, stands proudly in her shining silver armor, with her long purple hair left loose. Gravlox, a red Tiefling warlock with small horns protruding from his forehead (and former party member), stands in the middle wields a crossbow while in a deep lunge. Liyf, the halfling cleric of Loviatar, looks confidently forward, with one hand holding a shortsword, the other ready to sling spells. Mab, a purple Tiefling illusion wizard, with tall, Kudu-like horns and glowing gold eyes, triumphantly makes a profane gesture to the viewer. Janaan, a blue water Genasi monk, stands ready for action, her long blue hair floating as though it were in water. Mikrok, a statuesque green Dragonborn fighter/war mage, lurks silently, his trusty great axe resting on his armor-clad shoulder. Taddy Mason, a massive, well-dressed Goliath bard, is not pictured.">
+    <div class="contentwrapper">
+    <div class="picwrapper">
+    <img src="/images/PartyPic_2.jpg" class="pic" alt="A digital illustration of the party members standing in a forest. From left to right: Knot, a tall human-looking tree with deer antlers gestures with an open hand. Freja, a tall blue-green half orc stands with her bow at the ready, muscled legs poised for battle. Siw, a celestial paladin, stands proudly in her shining silver armor, with her long purple hair left loose. Gravlox, a red Tiefling warlock with small horns protruding from his forehead (and former party member), stands in the middle wields a crossbow while in a deep lunge. Liyf, the halfling cleric of Loviatar, looks confidently forward, with one hand holding a shortsword, the other ready to sling spells. Mab, a purple Tiefling illusion wizard, with tall, Kudu-like horns and glowing gold eyes, triumphantly makes a profane gesture to the viewer. Janaan, a blue water Genasi monk, stands ready for action, her long blue hair floating as though it were in water. Mikrok, a statuesque green Dragonborn fighter/war mage, lurks silently, his trusty great axe resting on his armor-clad shoulder. Taddy Mason, a massive, well-dressed Goliath bard, is not pictured."></div>
     <!--Begin party intro text-->
-    <section>
-        <h3>Meet the Thunderbuns</h3>
+    <section class="bodytext">
+        <h2>Meet the Thunderbuns</h2>
         <p>Below are brief profiles of each current member of the party. This list contains active party members, as well as characters on hiatus. A character may be on hiatus for a variety of reasons, such as the player who mans the character being the <abbr title="Dungeon Master">DM</abbr>, or having schedule conflicts for this campaign. Use the links below to jump to the character you are interested in.</p>
     </section>
+    <div class="twocolumn">
     <!--Begin character profile nav links list-->
-        <ul>
-            <li><a href="#Freja">Freja</a></li>
-            <li><a href="#Knot">Knot</a></li>
-            <li><a href="#Janaan">Janaan</a></li>
-            <li><a href="#Liyf">Liyf</a></li>
-                    
+    <div class="leftcolumnblank">
+        <ul class="leftborder">
+            <li class="char"><a class="links" href="#Freja">Freja</a></li>
+            <li class="char"><a class="links" href="#Knot">Knot</a></li>
+            <li class="char"><a class="links" href="#Janaan">Janaan</a></li>
+            <li class="char"><a class="links" href="#Liyf">Liyf</a></li>        
         </ul>
-        <ul>
-            <li><a href="#Mab">Mab</a></li>
-            <li><a href="#Mikrok">Mikrok</a></li>
-            <li><a href="Siw">Siw</a></li>
-            <li><a href="#Taddy">Taddy Mason</a></li>
+    </div>
+    <div class="rightcolumnblank">
+        <ul class="leftborder">
+            <li class="char"><a class="links" href="#Mab">Mab</a></li>
+            <li class="char"><a class="links" href="#Mikrok">Mikrok</a></li>
+            <li class="char"><a class="links" href="Siw">Siw</a></li>
+            <li class="char"><a class="links" href="#Taddy">Taddy Mason</a></li>
         </ul>
-    <hr>
+    </div>
+    </div>
+    <hr class="header2">
     <!--Begin character profiles-->
-    <section>
+    <div class="twocolumn">
         <!--Begin Left Character Profile Div 1-->
-        <div>
+        <div class="leftcolumn">
             <article id="Freja">
-                <header>
-                    <img src="/images/TempLogo.jpg" alt="Temporary profile pic" height="50" width="50">
-                    <h4>Freja</h4>
-                    <h5>Half-Orc Ranger/Rogue</h5>
-                    <h6>The Huntress</h6>
+                <header class="clearfix">
+                    <img src="/images/freja.png" alt="Freja" class="profilepic">
+                    <h3>Freja</h3>
+                    <hr class="header2">
+                    <h4>Half-Orc Ranger/Rogue</h4>
+                    <span class="charsubtitle">The Huntress</span>
                 </header>
                 <section>
-                    <p>
-                        Freja is a hardened ranger-rogue used to doing things alone - or rather, with just her faithful canine compaion, a wolf named Feng. Currently a member of a shadowy theifs organization, this one-time-lycanthrope has as many agendas as she has arrows in her quiver.
+                    <p class="chardesc">
+                        Freja is a hardened ranger-rogue used to doing things alone - or rather, with just her faithful canine compaion, a wolf named Feng. Currently a member of a shadowy theiving organization, this one-time-lycanthrope has as many agendas as she has arrows in her quiver.
                     </p>
-                   <h6>Likes</h6>
-                   <ul>
-                       <li>Shane, her husband</li>
-                       <li>Her bestie, Feng</li>
-                       <li>The blood of her enemies</li>
+                    <div class="twocolumn">
+                        <div class="likes">
+                   <span class="charsubtitle">Likes</span>
+                   <ul class="chardesclist">
+                       <li class="chardesclist">Shane, her husband</li>
+                       <li class="chardesclist">Her bestie, Feng</li>
+                       <li class="chardesclist">The blood of her enemies</li>
                    </ul>
-                   <h6>Dislikes</h6>
-                   <ul>
-                       <li>Anyone who doesn't like Feng</li>
-                       <li>Blowing her cover</li>
-                       <li>Wasting perfectly good arrows</li>
+                </div>
+                <div class="dislikes">
+                   <span class="charsubtitle">Dislikes</span>
+                   <ul class="chardesclist">
+                    <li class="chardesclist">Anyone who doesn't like Feng</li>
+                    <li class="chardesclist">Blowing her cover</li>
+                    <li class="chardesclist">Wasting perfectly good arrows</li>
                    </ul>
-                   <p>Signature Moves and Achievements</p>
-                   <ul>
-                       <li>Using Anhur's Grasp to deliver a deadly final blow.</li>
-                       <li>Once successfully mastered lycanthropy in Intepueh.</li>
-                       <li>Two words: Suprise Attack.</li>
+                </div>
+                </div>
+                   <h4>Signature Moves and Achievements</h4>
+                   <ul class="sig">
+                    <li class="sig">Using Anhur's Grasp to deliver a deadly final blow.</li>
+                    <li class="sig">Once successfully mastered lycanthropy in Intepueh.</li>
+                    <li class="sig">Two words: Suprise Attack.</li>
                     </ul>
                 </section>
             </article>
         </div>
         <!--Begin Right Character Profile Div 1-->
-        <div>
+        <div class="rightcolumn">
             <article id="Knot">
-                <header>
-                    <img src="/images/TempLogo.jpg" alt="Temporary profile pic" height="50" width="50">
-                    <h4>Knot Anent</h4>
-                    <h5>Arborin Moon Circle Druid</h5>
-                    <h6>The Tree of Many Shapes</h6>
-                </header>
+                <header class="clearfix">
+                    <img src="/images/knot.png" alt="knot" class="profilepic">
+                    <h3>Knot Anent</h3>
+                    <hr class="header2">
+                    <h4>Arborin Moon Circle Druid</h4>
+                    <span class="charsubtitle">The Tree of Many Shapes</span>
+                    </header>
                 <section>
-                    <p>
+                    <p class="chardesc">
                         Knot is an Arborin, a child of a massive, magical magnolia tree. Slow to trust, and deeply concerned with the wellbeing of the plants and animals around him, Knot can sometimes be uncertain about his compatriots, though their bonds grow as surely as his leaves do.
                     </p>
-                   <h6>Likes</h6>
-                   <ul>
-                       <li>Nature.</li>
-                       <li>His best friend, <a href="#Taddy">Taddy Mason</a></li>
-                       <li>Turning into a bird and flying away</li>
+                <div class="twocolumn">
+                    <div class="likes">
+                   <span class="charsubtitle">Likes</span>
+                   <ul class="chardesclist">
+                       <li class="chardesclist">Nature.</li>
+                       <li class="chardesclist">His best friend, <a href="#Taddy">Taddy Mason</a></li>
+                       <li class="chardesclist">Turning into a bird and flying away</li>
                    </ul>
-                   <h6>Dislikes</h6>
-                   <ul>
-                       <li>Fire</li>
-                       <li>Books, paper, or anything made of trees</li>
-                       <li>Wasting perfectly good arrows</li>
+                </div>
+                <div class="dislikes">
+                   <span class="charsubtitle">Dislikes</span>
+                   <ul class="chardesclist">
+                       <li class="chardesclist">Fire</li>
+                       <li class="chardesclist">Books, paper, or anything made of trees</li>
+                       <li class="chardesclist">Wasting perfectly good arrows</li>
                    </ul>
-                   <p>Signature Moves and Achievements</p>
-                   <ul>
-                       <li>Summoning a herd of Satyrs to play a group of enemies - and sometimes friends - to sleep.</li>
-                       <li>Befriending at any animal that comes across his path to acquire their Wildshape.</li>
-                       <li>Making Goodberries at clutch moments to save his teammates.</li>
+                </div>
+                </div>
+                   <h4>Signature Moves and Achievements</h4>
+                   <ul class="sig">
+                       <li class="sig">Summoning a herd of Satyrs to play a group of enemies - and sometimes friends - to sleep.</li>
+                       <li class="sig">Befriending at any animal that comes across his path to acquire their Wildshape.</li>
+                       <li class="sig">Making Goodberries at clutch moments to save his teammates.</li>
                     </ul>
                 </section>
             </article>
         </div>
+    </div>
+    <div class="twocolumn">
         <!--Begin Left Character Profile Div 2-->
+        <div class="leftcolumn">
         <article id="Janaan">
-            <header>
-                <img src="/images/TempLogo.jpg" alt="Temporary profile pic" height="50" width="50">
-                <h4>Janaan</h4>
-                <h5>Water Genasi Monk</h5>
-                <h6>Faster Than You</h6>
+            <header class="clearfix">
+                <img src="/images/janaan.png" alt="Janaan" class="profilepic">
+                <h3>Janaan</h3>
+                <hr class="header2">
+                <h4>Water Genasi Monk</h4>
+                <span class="charsubtitle">Faster Than You</span>
             </header>
             <section>
-                <p>
+                <p class="chardesc">
                   Janaan, a happy-go-lucky monk, is thrilled with her new group of friends and the adventures they go on. While she seeks to find more about her mother, she enjoys the hearty bouts and magical mischief the party gets into. Indescribably good at hand-to-hand combat and as pretty as a peach, Janaan is not one to be underestimated.
                 </p>
-               <h6>Likes</h6>
-               <ul>
-                   <li>Water! Lakes, rivers, ponds, puddles</li>
-                   <li>A good beat and a handsome dance partner</li>
-                   <li>Throwing hands with whoever is mean to her or her friends</li>
+                <div class="twocolumn">
+                    <div class="likes">
+               <span class="charsubtitle">Likes</span>
+               <ul class="chardesclist">
+                   <li class="chardesclist">Water! Lakes, rivers, ponds, puddles</li>
+                   <li class="chardesclist">A good beat and a handsome dance partner</li>
+                   <li class="chardesclist">Throwing hands with whoever is mean to her or her friends</li>
                </ul>
-               <h6>Dislikes</h6>
-               <ul>
-                   <li>Rude people</li>
-                   <li>Deserts and dry places</li>
-                   <li>Bad music</li>
+            </div>
+            <div class="dislikes">
+               <span class="charsubtitle">Dislikes</span>
+               <ul class="chardesclist">
+                   <li class="chardesclist">Rude people</li>
+                   <li class="chardesclist">Deserts and dry places</li>
+                   <li class="chardesclist">Bad music</li>
                </ul>
-               <p>Signature Moves and Achievements</p>
-               <ul>
-                   <li>Can move so far and so fast that she can lap the entire party in one turn.</li>
-                   <li>Took out a Lamia by parkour-ing off a massive column onto its back to deliver the final blow.</li>
-                   <li>Lorem Ipsum</li>
+            </div>
+        </div>
+               <h4>Signature Moves and Achievements</h4>
+               <ul class="sig">
+                   <li class="sig">Can move so far and so fast that she can lap the entire party in one turn.</li>
+                   <li class="sig">Took out a Lamia by parkour-ing off a massive column onto its back to deliver the final blow.</li>
+                   <li class="sig">Lorem Ipsum</li>
                 </ul>
             </section>
         </article>
+    </div> 
        <!--Begin Right Character Profile Div 2-->
-       <div>
+       <div class="rightcolumn">
         <article id="Liyf">
-            <header>
-                <img src="/images/TempLogo.jpg" alt="Temporary profile pic" height="50" width="50">
-                <h4>Liyf</h4>
-                <h5>Halfling Cleric</h5>
-                <h6>Loviatar's Accolyte</h6>
+            <header class="clearfix">
+                <img src="/images/liyf.png" alt="Liyf" class="profilepic">
+                <h3>Liyf</h3>
+                <hr class="header2">
+                <h4>Halfling Cleric</h4>
+                <span class="charsubtitle">Loviatar's Accolyte</span>
             </header>
             <section>
-                <p>
+                <p class="chardesc">
                    Liyf - a short, feminine halfling - is often mistaken for a child, a perception she has used to great advantage against foes who underestimate her. This priestess of the pain-god Loviatar is not one to be trifled with, wielding death with her Spiritual Weapon, and brining life back with Revivify.
                 </p>
-               <h6>Likes</h6>
-               <ul>
-                   <li>Loviatar</li>
-                   <li>Rifling through someone's belongings...for recon</li>
-                   <li>Ball bearings</li>
+                <div class="twocolumn">
+                <div class="likes">
+               <span class="charsubtitle">Likes</span>
+               <ul class="chardesclist">
+                   <li class="chardesclist">Loviatar</li>
+                   <li class="chardesclist">Rifling through someone's belongings...for recon</li>
+                   <li class="chardesclist">Ball bearings</li>
                </ul>
-               <h6>Dislikes</h6>
-               <ul>
-                   <li>When her party keeps dying at inopportune moments</li>
-                   <li>Those who disparage Loviatar</li>
-                   <li>A boring bar</li>
+            </div><div class="dislikes">
+               <span class="charsubtitle">Dislikes</span>
+               <ul class="chardesclist">
+                   <li class="chardesclist">When her party keeps dying at inopportune moments</li>
+                   <li class="chardesclist">Those who disparage Loviatar</li>
+                   <li class="chardesclist">A boring bar</li>
                </ul>
-               <p>Signature Moves and Achievements</p>
-               <ul>
-                   <li>Dropping a bag of ball bearings down a crowded staircase, causing enough havoc to allow the party to escape their pursuers. </li>
-                   <li>Literally saving everyone's butt, in every battle, with her healing.</li>
-                   <li>Being wildly difficult to hit, while also dealing wild amounts of damage.</li>
+            </div>
+        </div>
+               <h4>Signature Moves and Achievements</h4>
+               <ul class="sig">
+                   <li class="sig">Dropping a bag of ball bearings down a crowded staircase, causing enough havoc to allow the party to escape their pursuers. </li>
+                   <li class="sig">Literally saving everyone's butt, in every battle, with her healing.</li>
+                   <li class="sig">Being wildly difficult to hit, while also dealing wild amounts of damage.</li>
                 </ul>
             </section>
         </article>
        </div>
+       </div>
         <!--Begin Left Character Profile Div 3-->
-       <div>
+        <div class="twocolumn">
+       <div class="leftcolumn">
         <article id="Mab">
-            <header>
-                <img src="/images/TempLogo.jpg" alt="Temporary profile pic" height="50" width="50">
-                <h4>Mab</h4>
-                <h5>Tielfing Illusion Wizard</h5>
-                <h6>The Spooky One</h6>
+            <header class="clearfix">
+                <img src="/images/mab.png" alt="Mab" class="profilepic">
+                <h3>Mab</h3>
+                <hr class="header2">
+                <h4>Tielfing Illusion Wizard</h4>
+                <span class="charsubtitle">The Spooky One</span>
             </header>
             <section>
-                <p>
+                <p class="chardesc">
                    Mab is a powerful, if not fragile, wizard who specializes in the art of illusion, with a strong dash of <abbr title="Area of Effect">AOE</abbr> spells. A charismatic-slash-intimidating loner, she finds solace in books and the pursuit of arcane knowledge. Not used to having friends, she finds herself awkwardly fond of her comrades - though still burdened by the grief and shame of her past.
                 </p>
-               <h6>Likes</h6>
-               <ul>
-                   <li>Books. Libraries. Giant notebooks full of knowledge.</li>
-                   <li>Hiding behind her bestie-slash-assigned-tank <a href="#Siw">Siw</a></li>
-                   <li>Scaring the heck out of her enemies</li>
+                <div class="twocolumn">
+                    <div class="likes">
+               <span class="charsubtitle">Likes</span>
+               <ul class="chardesclist">
+                   <li class="chardesclist">Books. Libraries. Giant notebooks full of knowledge.</li>
+                   <li class="chardesclist">Hiding behind her bestie and assigned-tank <a href="#Siw">Siw</a></li>
+                   <li class="chardesclist">Scaring the heck out of her enemies</li>
                </ul>
-               <h6>Dislikes</h6>
-               <ul>
-                   <li>Having literally HALF the <abbrv title="hit points">HP of her friends.</abbrv></li>
-                   <li>Smarmy bards.</li>
-                   <li>Not landing a high-level spell she burned her single high-level spell slot for.</li>
+            </div>
+            <div class="dislikes">
+               <span class="charsubtitle">Dislikes</span>
+               <ul class="chardesclist">
+                   <li class="chardesclist">Having literally HALF the <abbrv title="hit points">HP of her friends.</abbrv></li>
+                   <li class="chardesclist">Smarmy bards.</li>
+                   <li class="chardesclist">Not landing a high-level spell she burned her single high-level spell slot for.</li>
                </ul>
-               <p>Signature Moves and Achievements</p>
-               <ul>
-                   <li>Once created a convincing enough image of Mictlan to scare half an army. Mictlan gave it a thumbs up.</li>
-                   <li>Somehow managing to pass all her rolls, yet getting knocked into death saving throws in each battle and requiring <a href="#Siw">Siw</a> to save her.</li>
-                   <li>Casting Firebolt, Agnazzar's Scorcher, or Scorching Ray with an uncouth gesture towards her enemies. </li>
+            </div>
+            </div>
+               <h4>Signature Moves and Achievements</h4>
+               <ul class="sig">
+                   <li class="sig">Once created a convincing enough image of Mictlan to scare half an army. Mictlan gave it a thumbs up.</li>
+                   <li class="sig">Somehow managing to pass all her rolls, yet getting knocked into death saving throws in each battle and requiring <a href="#Siw">Siw</a> to save her.</li>
+                   <li class="sig">Casting Firebolt, Agnazzar's Scorcher, or Scorching Ray with an uncouth gesture towards her enemies. </li>
                 </ul>
             </section>
         </article>
        </div>
        <!--Begin Right Character Profile Div 3-->
-       <div>
+       <div class="rightcolumn">
         <article id="Mikrok">
-            <header>
-                <img src="/images/TempLogo.jpg" alt="Temporary profile pic" height="50" width="50">
-                <h4>Mikrok</h4>
-                <h5>Dragonborn Fighter/War Mage</h5>
-                <h6>The Green War Scholar</h6>
+            <header class="clearfix">
+                <img src="/images/mikrok.png" alt="Mikrok" class="profilepic">
+                <h3>Mikrok</h3>
+                <hr class="header2">
+                <h4>Dragonborn Fighter/War Mage</h4>
+                <span class="charsubtitle">The Green War Scholar</span>
             </header>
             <section>
-                <p>
+                <p class="chardesc">
                   Mikrok comes from a long line of famous Dragonborn - as scholarly as he is powerful, he seeks arcane wisdom regarding the origins of his people. Tall and muscular, his form can often be intimidating, but his passion for acting draws out the appreciation in his crowds.
                 </p>
-               <h6>Likes</h6>
-               <ul>
-                   <li>Biiiiig weapons</li>
-                   <li>A well-written monologue</li>
-                   <li>Arcane knowledge - but not in the freaky way <a href="#Mab">Mab</a> pursues it.</li>
+                <div class="twocolumn">
+                    <div class="likes">
+               <span class="charsubtitle">Likes</span>
+               <ul class="chardesclist">
+                   <li class="chardesclist">Biiiiig weapons</li>
+                   <li class="chardesclist">A well-written monologue</li>
+                   <li class="chardesclist">Arcane knowledge - but not in the freaky way <a href="#Mab">Mab</a> pursues it.</li>
                </ul>
-               <h6>Dislikes</h6>
-               <ul>
-                   <li>Rude people</li>
-                   <li>Boring plays and hammy actors</li>
-                   <li>Intelletual dead ends</li>
+            </div>
+            <div class="dislikes">
+               <span class="charsubtitle">Dislikes</span>
+               <ul class="chardesclist">
+                   <li class="chardesclist">Rude people</li>
+                   <li class="chardesclist">Boring plays and hammy actors</li>
+                   <li class="chardesclist">Intelletual dead ends</li>
                </ul>
-               <p>Signature Moves and Achievements</p>
-               <ul>
-                   <li>Once gave an impromptu acting performance so stirring and moving that he still occaisionally gets recognized for it.</li>
-                   <li>Lorem Ipsum</li>
-                   <li>Lorem Ipsum </li>
+            </div>
+        </div>
+               <h4>Signature Moves and Achievements</h4>
+               <ul class="sig">
+                   <li class="sig">Once gave an impromptu acting performance so stirring and moving that he still occaisionally gets recognized for it.</li>
+                   <li class="sig">Lorem Ipsum</li>
+                   <li class="sig">Lorem Ipsum </li>
                 </ul>
             </section>
         </article>
        </div>
+    </div>
+    <div class="twocolumn">
        <!--Begin Left Character Profile Div 4-->
-       <div>
+       <div class="leftcolumn">
         <article id="Siw">
-            <header>
-                <img src="/images/TempLogo.jpg" alt="Temporary profile pic" height="50" width="50">
-                <h4>Siw</h4>
-                <h5>Celestial Paladin</h5>
-                <h6>The Holy and the Turned</h6>
+            <header class="clearfix">
+                <img src="/images/siw.png" alt="Siw" class="profilepic">
+                <h3>Siw</h3>
+                <hr class="header2">
+                <h4>Celestial Paladin</h4>
+                <span class="charsubtitle">The Holy and the Turned</span>
             </header>
             <section>
-                <p>
+                <p class="chardesc">
                   An independent woman of ferocity and kindess, Siw has been to hell and back - literally. With her trusty steed Steedve at her side, Siw flies above the competition to keep her friends safe and rain pain upon her enemies.
                 </p>
-               <h6>Likes</h6>
-               <ul>
-                   <li>Grooming Steedve and telling him how handsome he is.</li>
-                   <li>Lorem</li>
-                   <li>Lorem</li>
+                <div class="twocolumn">
+                    <div class="likes">
+               <span class="charsubtitle">Likes</span>
+               <ul class="chardesclist">
+                   <li class="chardesclist">Grooming Steedve and telling him how handsome he is.</li>
+                   <li class="chardesclist">Lorem</li>
+                   <li class="chardesclist">Lorem</li>
                </ul>
-               <h6>Dislikes</h6>
-               <ul>
-                   <li>Lorem</li>
-                   <li>Lorem</li>
-                   <li>Lorem</li>
+            </div>
+            <div class="dislikes">
+               <span class="charsubtitle">Dislikes</span>
+               <ul class="chardesclist">
+                   <li class="chardesclist">Lorem</li>
+                   <li class="chardesclist">Lorem</li>
+                   <li class="chardesclist">Lorem</li>
                </ul>
-               <p>Signature Moves and Achievements</p>
-               <ul>
-                   <li>Once bargained with the literal god of death after dying, earning her way back to the living realm - with some cool new powers to boot.</li>
-                   <li>Lorem</li>
-                   <li>Lorem Ipsum</li>
+            </div>
+            </div>
+               <h4>Signature Moves and Achievements</h4>
+               <ul class="sig">
+                   <li class="sig">Once bargained with the literal god of death after dying, earning her way back to the living realm - with some cool new powers to boot.</li>
+                   <li class="sig">Lorem</li>
+                   <li class="sig">Lorem Ipsum</li>
                 </ul>
             </section>
         </article>
        </div>
        <!--Begin Right Character Profile Div 4-->
-       <div>
+       <div class="rightcolumn">
         <article id="Taddy">
-            <header>
-                <img src="/images/TempLogo.jpg" alt="Temporary profile pic" height="50" width="50">
-                <h4>Taddy Mason</h4>
-                <h5>Mountain Goliath Bard</h5>
-                <h6>The Singing Rock</h6>
+            <header class="clearfix">
+                <img src="/images/TempLogo.jpg" alt="Temporary profile pic" class="profilepic">
+                <h3>Taddy Mason</h3>
+                <hr class="header2">
+                <h4>Mountain Goliath Bard</h4>
+                <span class="charsubtitle">The Singing Rock</span>
             </header>
             <section>
-                <p>
-                  Lorem
+                <p class="chardesc">
+                  Hailing from the noble Mason family of the Ceacilian mountains, he knew from an early age he was destined for a life of song. Honing his skills as a bard, the unusually charming Goliath sought his fortune in Nettep, where he scored a gig as a featured artist at the hoity-toity hotel the Gilded Lily. Running into the rag-tag group of adventurers called the Thunderbuns while fighting their way out of a dinner party gone bad, he is slowly getting to know his compatriots.
                 </p>
-               <h6>Likes</h6>
-               <ul>
-                   <li>His new best friend, <a href="#Knot">Knot</a></li>
-                   <li>Lorem</li>
-                   <li>Lorem</li>
+                <div class="twocolumn">
+                    <div class="likes">
+               <span class="charsubtitle">Likes</span>
+               <ul class="chardesclist">
+                   <li class="chardesclist">His new best friend, <a href="#Knot">Knot</a></li>
+                   <li class="chardesclist">Hot baths</li>
+                   <li class="chardesclist">Cooking exsquisite meals</li>
                </ul>
-               <h6>Dislikes</h6>
-               <ul>
-                   <li>Lorem</li>
-                   <li>Lorem</li>
-                   <li>Lorem</li>
+            </div>
+            <div class="dislikes">
+               <span class="charsubtitle">Dislikes</span>
+               <ul class="chardesclist">
+                   <li class="chardesclist">Lightning and thunder</li>
+                   <li class="chardesclist">Feet?</li>
+                   <li class="chardesclist">Technology that's not spell-driven</li>
                </ul>
-               <p>Signature Moves and Achievements</p>
-               <ul>
-                   <li>Lorem</li>
-                   <li>Lorem</li>
-                   <li>Lorem Ipsum</li>
+            </div>
+            </div>
+               <h4>Signature Moves and Achievements</h4>
+               <ul class="sig">
+                   <li class="sig">Is ready to bail at the sight of danger, but begrudingly does not leave the team behind.</li>
+                   <li class="sig">Jamming with anyone and anything. It's how he met his bestie.</li>
+                   <li class="sig">Once observed his tribe move a mountain, proving that mountains can indeed be moved.</li>
                 </ul>
             </section>
         </article>
        </div>
-    </section>
+</div>
+</div>
     <!--Begin Footer-->
     <footer>
-        <h6>This site is made for recreational/fan purposes only, and in no way claims any ownership of any Dungeons and Dragons source material. The temporary logo is by <a href="https://www.flickr.com/photos/42913062@N07/4891410215">Jenny Ivins</a>, and is used under the <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/">CC BY-NC-SA 2.0 license</a>.</h6>
-        <p><a href="mailto:carolinebreul@gmail.com">Contact the <abbr title="Dungeon Master">DM</abbr></a></p>
-    </footer>
+        <p class="footerleft">This site is made for recreational/fan purposes only, and in no way claims any ownership of any Dungeons and Dragons source material. The temporary logo is by <a href="https://www.flickr.com/photos/42913062@N07/4891410215" class="footerlink">Jenny Ivins</a>, and is used under the <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/" class="footerlink">CC BY-NC-SA 2.0 license</a>.</p>
+        <p class="footerright"><a href="mailto:carolinebreul@gmail.com" class="footerlink">Contact the <abbr title="Dungeon Master">DM</abbr></a></p>
+</footer>
 </body>
 </html>
