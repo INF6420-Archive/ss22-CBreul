@@ -39,12 +39,78 @@
 }
 
 /*Nav Styling*/
-ul.nav {
-    list-style-type:none;
+.menu-icon {
+  cursor: pointer;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 18px;
+}
+
+.menu-icon .navicon:before,
+.menu-icon .navicon:after {
+  background: #333;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.menu-icon .navicon:before {
+  top: 5px;
+}
+
+.menu-icon .navicon:after {
+  top: -5px;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu-btn:checked ~ .main-nav {
+  opacity: 1;
+  height: auto;
+  transition: all 0.2s ease-out;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+.main-nav {
+  list-style: none;
+  opacity: 0;
+  height: 0;
+  transition: all 0.2s ease-out;
+  flex-basis: 100%;
 }
 
 li.nav {
-    display:none;
+    /* display:none; */
     margin:30px;
     padding:10px;
     font-family:"Bebas Neue", Arial, sans-serif;
@@ -160,7 +226,7 @@ h1 {
     padding:30px 0 0 30px;
     margin:0;
     letter-spacing:3px;
-} 
+}
 
 h2 {
     font-family:"Raleway", Arial, sans-serif;
@@ -238,7 +304,7 @@ hr.header2 {
 
 
 /*Link styles*/
-a.links {   
+a.links {
     font-weight:300px;
     color:#000000;
 }
@@ -352,7 +418,7 @@ p.outcome{
     padding:30px 30px 15px 15px;
     border-left:3px solid #000000;
     border-bottom:3px solid #000000;
-    
+
 }
 
 .profilepic{
@@ -374,7 +440,7 @@ p.outcome{
 
     /* Title */
     h1 {
-        Font-size:80pt; 
+        Font-size:80pt;
     }
     .subtitle {
         font-family:"Raleway", Arial, sans-serif;
@@ -413,16 +479,13 @@ p.outcome{
         padding-left:10px;
     }
     /* Navigation */
-    nav {
+    .main-menu {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         align-items:center;
         list-style-type: none;
         width: 100%;
-        padding-left:30px;
-        padding-top: 10px;
-        padding-bottom: 10px;
         margin:0;
     }
 
@@ -437,7 +500,7 @@ p.outcome{
         border-bottom:3px solid #000000;
         border-left:3px solid #000000;
     }
-   
+
     .toggle {
         order: 0;
     }
@@ -451,14 +514,14 @@ p.outcome{
         display:inline;
         padding:30px;
         float:left;
-    
+
     }
     .twocolumn {
         display:flex;
         margin:30px;
 
     }
-    
+
     .leftcolumn {
         flex:50%;
         border:3px solid #000000;
@@ -473,7 +536,7 @@ p.outcome{
         padding:30px;
         background-color: rgba(24, 236, 241,0.2)
     }
-    
+
     .leftcolumnalt {
         flex:50%;
         border:3px solid #000000;
@@ -488,7 +551,7 @@ p.outcome{
         padding:30px;
         background-color: rgba(8, 255, 94,0.2)
     }
-    
+
     .leftcolumnalt2 {
         flex:50%;
         border:3px solid #000000;
@@ -503,12 +566,12 @@ p.outcome{
         padding:30px;
         background-color: rgba(224, 10, 247,0.2)
     }
-    
+
     .leftcolumnblank{
         flex:25%;
         margin:0 30px 0 0;
     }
-    
+
     .rightcolumnblank{
         flex:25%;
         margin:0;
@@ -526,22 +589,37 @@ p.outcome{
         flex:25%;
         margin-right:30px;
     }
-    
+
     .dislikes {
         flex:25%;
     }
-    
+
 }
 
   @media all and (min-width:768px){
       /*nav styling*/
-        nav {
-            padding:30px 30px 30px 0;
-            border-bottom:3px solid #000000;
+        .menu-icon {
+            display: none;
         }
 
-        ul.nav {
-            list-style-type:none;
+        .menu-icon {
+            display: none;
+        }
+
+        .main-nav {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-content: center;
+            opacity: 1;
+            height: auto;
+            flex-basis: auto;
+        }
+
+        .main-menu {
+            /* padding:30px 30px 30px 0; */
+            border-bottom:3px solid #000000;
         }
 
         li.nav {
