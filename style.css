@@ -7,6 +7,8 @@
 
 .contentwrapper{
     padding:30px;
+    display:flex;
+    flex-direction: column;
 }
 /* Hamburger Mobile Menu*/
 .toggle {
@@ -114,20 +116,50 @@ li.nav {
     margin:30px;
     padding:10px;
     font-family:"Bebas Neue", Arial, sans-serif;
-    font-size:24px;
+    font-size:20px;
     letter-spacing:2px;
     border-bottom:3px solid #000000;
     border-left:3px solid #000000;
     order:1;
-    /*background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 87%, rgba(218,226,228,1) 100%);*/
-
 }
 
+li.nav1 {
+    margin:30px;
+    padding:10px;
+    display: inline;
+    order:2;
+    font-family:"Bebas Neue", Arial, sans-serif;
+    font-size:14pt;
+    letter-spacing:2px;
+    background-color: #fcba03;
+    border-bottom:3px solid #000000;
+    border-left:3px solid #000000;
+}
+a.nav {
+    text-decoration: none;
+    font-style:bold;
+    color:#000000;
+}
+
+a.nav:hover{
+    color: #ffffff;
+ }
+a.nav1{
+    text-decoration: none;
+
+}
+a.nav1:hover{
+    color:#000000;
+    text-decoration:none;
+}
+a.nav1:visited{
+    color:#000000;
+}
 /*Section and Column Styling*/
 
 section.bodytext {
     padding:30px 60px 30px 60px;
+    flex:100%;
 }
 
 .leftborder {
@@ -139,57 +171,74 @@ section.bodytext {
     margin:30px;
     width:100%;
 }
+.twocolumninternal {
+    margin:10px;
+}
+
 
 .leftcolumn {
     width:80%;
-    border:3px solid #000000;
+    border-left:3px solid #000000;
+    border-bottom:3px solid #000000;
     padding:30px;
     margin-bottom:30px;
-    background-color: rgba(24, 236, 241,0.2)
+
 }
 .rightcolumn {
     width:80%;
-    border:3px solid #000000;
+    border-left:3px solid #000000;
+    border-bottom:3px solid #000000;
     padding:30px;
-    background-color: rgba(24, 236, 241,0.2)
 }
 
 .leftcolumnalt {
     width:80%;
-    border:3px solid #000000;
+    border-left:3px solid #000000;
+    
     margin: 30px;
     padding:30px;
-    background-color: rgba(8, 255, 94,0.2)
+    
 }
 .rightcolumnalt {
     width:80%;
-    border:3px solid #000000;
+    border-left:3px solid #000000;
+
     margin: 30px;
     padding:30px;
-    background-color: rgba(8, 255, 94,0.2)
+  
 }
 
 .leftcolumnalt2 {
     width:80%;
-    border:3px solid #000000;
+    border-left:3px solid #000000;
+
     margin: 30px;
     padding:30px;
-    background-color: rgba(224, 10, 247,0.2)
+
 }
 .rightcolumnalt2 {
     width:80%;
-    border:3px solid #000000;
+    border-left:3px solid #000000;
+
     margin: 30px;
     padding:30px;
-    background-color: rgba(224, 10, 247,0.2)
+
 }
 
 .leftcolumnblank{
-    width:25%;
+    width:50%;
     margin:0 30px 0 0;
+}
+.leftcolumnblankinternal{
+    width:25%;
+    margin:0 15px 0 0;
 }
 
 .rightcolumnblank{
+    width:50%;
+    margin:0;
+}
+.rightcolumnblankinternal{
     width:25%;
     margin:0;
 }
@@ -240,28 +289,28 @@ h2 {
 
 h3 {
     font-family:"Bebas Neue", arial, sans-serif;
-    font-size:18pt;
+    font-size:16pt;
     letter-spacing:2px;
     padding-bottom:5px;
+    padding-top:0px;
 }
 
 h4 {
     font-family:"Raleway", arial, sans-serif;
-    font-size:16pt;
+    font-size:14pt;
     font-style:bold;
     padding-bottom:5px;
 }
 span.charsubtitle {
-    font-family:"Raleway", arial, sans-serif;
-    font-size:16pt;
-    font-style:italic;
+    font-family:"Bebas Neue", arial, sans-serif;
+    font-size:14pt;
     padding-bottom:10px;
     display:block;
 }
 
 span.npcoutcome{
     font-family:"Bebas Neue", arial, sans-serif;
-    font-size:16pt;
+    font-size:18pt;
     letter-spacing:2px;
     margin-top:10px;
     display:block;
@@ -282,6 +331,11 @@ p,li {
     font-weight:300;
     padding-bottom:5px;
 }
+li.borderlist{
+    margin-left:10px;
+    font-size:12pt;
+    padding-bottom:2px;
+}
 
 /*HRs*/
 
@@ -290,8 +344,8 @@ hr {
 }
 
 hr.header1 {
-    background-color:#18ECF1;
-    border:1px solid #18ECF1;
+    background-color:#fcba03;
+    border:1px solid #fcba03;
     height:30px;
 }
 
@@ -300,6 +354,12 @@ hr.header2 {
     border:1px solid #000000;
     height:5px;
     margin-bottom:15px;
+}
+
+hr.header3{
+    background-color:#CC0000;
+    border:1px solid#CC0000;
+    height:30px;
 }
 
 
@@ -311,7 +371,7 @@ a.links {
 
 /*Party-Specific*/
 li.chardesclist{
-    font-size:14pt;
+    font-size:12pt;
     padding-right:10px;
 }
 li.char {
@@ -328,25 +388,36 @@ ul.sig{
 li.sig{
     list-style-type: square;
     font-size:12pt;
+    padding-bottom:2px;
 }
 .profilepic {
     height:150px;
     float:left;
-    padding-right:20px;
-    padding-bottom:10px;
+    margin-right:20px;
+    margin-bottom:10px;
+    border:1px solid #000000;
 }
 p.chardesc {
     font-family:"Raleway", Arial, sans-serif;
-    font-size:14pt;
+    font-size:12pt;
     line-height: 1.5em;
     font-weight:600;
     padding:15px;
-    background-color: #ffffff;
+    background-color: #fcba03;
     border-left:3px solid #000000;
     border-bottom:3px solid #000000;
 }
+
+p.npcdesc{
+    font-family:"Raleway", Arial, sans-serif;
+    font-size:12pt;
+    line-height: 1.5em;
+    font-weight:600;
+    padding:15px;
+}
 ul.chardesclist {
     padding-left:15px;
+    padding-bottom:15px;
 }
 
 .likes {
@@ -357,17 +428,88 @@ ul.chardesclist {
 .dislikes {
     flex:50%;
 }
+/*Form-specific*/
+form{
+    min-width:400px;
+    max-width:700px;
+    border:3px solid #000000;
+    padding:30px;
+    background-color: #fcba03;
+}
+div.form{
+    padding:30px 30px 30px 0;
+}
+form>ul{
+list-style:none;
+}
+.form-input{
+    width:100%;
+    height:30px;
+}
+textarea.input{
+    resize: vertical;
+}
+
+form>button{
+    padding:15px;
+    border:3px solid #000000;
+    border-radius:3px;
+    background-color: #000000;
+    color:#ffffff;
+    font-size:18pt;
+    letter-spacing:1px;
+    font-family:"Raleway", Arial, sans-serif;
+    font-weight: bold;
+    cursor:pointer;
+}
+form>button:hover{
+    border:3px solid #ffffff;
+}
+
+label{
+    font-size:18pt;
+    display:block;
+    letter-spacing:1px;
+    font-family:"Bebas Neue",Arial, Helvetica, sans-serif;
+    padding-bottom:5px;
+}
+
+span.inst{
+    font-family:"Raleway", Arial, Helvetica, sans-serif;
+    font-size:12pt;
+    color:#000000;
+    line-height: 1.5em;
+    display:block;
+    font-style:italic;
+}
+input:hover{
+    border:3px solid #000000;
+}
+
+.error {
+    border:3px solid #C62828;
+  }
+  
+.error-message {
+    color:#FFFFFF;
+    background-color: #CC0000;
+    font-family:"Raleway",Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    font-size:14pt;
+    text-align: center;
+    margin-top:10px;
+    border-radius:3px;
+  }
 
 /*Battlelog-Specific*/
 .battles{
-    background-color: rgba(24, 236, 241,0.2);
-    border:3px solid #000000;
+    border-left:10px solid #000000;
     padding:30px;
     margin-bottom:30px;
 }
 li.battlelist{
     margin-left:30px;
-    font-size:14pt;
+    font-size:12pt;
 
 }
 
@@ -375,7 +517,8 @@ li.battlelist{
     padding:30px;
     background-color:#ffffff;
     color:#000000;
-    border:3px solid #000000;
+    border-left:3px solid #000000;
+    border-bottom:3px solid #000000;
 }
 
 .battlecolumns{
@@ -386,16 +529,26 @@ li.battlelist{
 .columnheader{
     padding-top:15px;
     padding-bottom:15px;
+    
+}
+
+.notable{
+    padding-left:30px;
 }
 
 .outcome{
     padding-top:30px;
+    padding-left:30px;
 
 }
 p.outcome{
     font-family:"Bebas Neue", Arial, sans-serif;
     font-size:24pt;
     padding:0;
+    background-color: #fcba03;
+    display:inline;
+    padding:10px;
+    margin-top:30px;
 }
 
 /*Image Styling*/
@@ -413,7 +566,7 @@ p.outcome{
 }
 
 .pic {
-    width:75%;
+    width:60%;
     margin:30px;
     padding:30px 30px 15px 15px;
     border-left:3px solid #000000;
@@ -453,7 +606,7 @@ p.outcome{
     h2 {
         font-family:"Raleway", Arial, sans-serif;
         font-size:36pt;
-        text-decoration:bold;
+        font-weight:bold;
         padding-bottom:15px;
         padding-top:30px;
         /*border-left:3px solid #000000;
@@ -464,19 +617,51 @@ p.outcome{
         font-size:30pt;
         letter-spacing:2px;
         padding-bottom:5px;
+        padding-top:0px;
+    }
+    h4 {
+        font-family:"Raleway", arial, sans-serif;
+        font-size:18pt;
+        font-style:bold;
+        padding-bottom:10px;
     }
     p,li {
         font-family:"Raleway", Arial, sans-serif;
         font-size:18pt;
         line-height: 1.5em;
-        font-weight:300;
-        padding-bottom:5px;
+        font-weight:350;
+        padding-bottom:15px;
     }
     li.char {
         font-family:"Bebas Neue",Arial, Helvetica, sans-serif;
         font-size:22pt;
         letter-spacing: 3px;
         padding-left:10px;
+        margin-left:10px;
+    }
+
+    p.chardesc {
+        font-family:"Raleway", Arial, sans-serif;
+        font-size:12pt;
+        line-height: 1.5em;
+        font-weight:600;
+        padding:15px;
+        background-color: #fcba03;
+        border-left:3px solid #000000;
+        border-bottom:3px solid #000000;
+    }
+    p.npcdesc{
+        font-family:"Raleway", Arial, sans-serif;
+        font-size:14pt;
+        line-height: 1.5em;
+        font-weight:600;
+        padding:15px;
+    }
+    span.charsubtitle {
+        font-family:"Bebas Neue", arial, sans-serif;
+        font-size:20pt;
+        padding-bottom:10px;
+        display:block;
     }
     /* Navigation */
     .main-menu {
@@ -500,13 +685,45 @@ p.outcome{
         border-bottom:3px solid #000000;
         border-left:3px solid #000000;
     }
-
+    li.nav:hover{
+        background-color: #000000;
+        color:#ffffff;
+        border-left:3px solid #fcba03;
+        border-bottom:3px solid #fcba03;
+    }
+    a.nav:hover{
+       color: #ffffff;
+    }
+    
+    li.nav1 {
+        margin:10px;
+        padding:15px;
+        display: inline;
+        order:2;
+        font-family:"Bebas Neue", Arial, sans-serif;
+        font-size:20pt;
+        letter-spacing:2px;
+        background-color: #fcba03;
+        border-bottom:3px solid #000000;
+        border-left:3px solid #000000;
+    }
+    a.nav1{
+        text-decoration: none;
+    }
+    a.nav1:hover{
+        color:#000000;
+        text-decoration:none;
+    }
+    a.nav1:visited{
+        color:#000000;
+    }
+   
     .toggle {
         order: 0;
     }
     .profilepic{
-        width:150px;
-        height:150px;
+        width:200px;
+        height:200px;
     }
     .logo {
         width:250px;
@@ -518,63 +735,96 @@ p.outcome{
     }
     .twocolumn {
         display:flex;
+        justify-content: flex-start;
+        width:100%;
         margin:30px;
+        flex-direction: row;
+        column-gap: 5%;
+
+    }
+    .twocolumninternal {
+        display:flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        column-gap: 5%;
 
     }
 
     .leftcolumn {
-        flex:50%;
-        border:3px solid #000000;
+        flex:30%;
+        border-left:3px solid #000000;
+        border-bottom:3px solid #000000;
         margin:30px;
         padding:30px;
-        background-color: rgba(24, 236, 241,0.2)
+
     }
     .rightcolumn {
-        flex:50%;
-        border:3px solid #000000;
+        flex:30%;
+        border-left:3px solid #000000;
+        border-bottom:3px solid #000000;
         margin:30px;
         padding:30px;
-        background-color: rgba(24, 236, 241,0.2)
     }
 
     .leftcolumnalt {
         flex:50%;
-        border:3px solid #000000;
+        max-width:800px;
+        border-left:3px solid #000000;
+
         margin:30px;
         padding:30px;
-        background-color: rgba(8, 255, 94,0.2)
+        
     }
     .rightcolumnalt {
         flex:50%;
-        border:3px solid #000000;
+        max-width:800px;
+        border-left:3px solid #000000;
+
         margin: 30px;
         padding:30px;
-        background-color: rgba(8, 255, 94,0.2)
+        
     }
 
     .leftcolumnalt2 {
         flex:50%;
-        border:3px solid #000000;
+        border-left:3px solid #000000;
+
         margin: 30px;
         padding:30px;
-        background-color: rgba(224, 10, 247,0.2)
+
     }
     .rightcolumnalt2 {
         flex:50%;
-        border:3px solid #000000;
+        border-left:3px solid #000000;
+
         margin: 30px;
         padding:30px;
-        background-color: rgba(224, 10, 247,0.2)
     }
 
     .leftcolumnblank{
+        flex:50%;
+        min-width:300px;
+        max-width:500px;
+        margin:0 30px 0 30px;
+    }
+    .leftcolumnblankinternal{
         flex:25%;
-        margin:0 30px 0 0;
+        min-width:200px;
+        max-width:500px;
+        margin:0 15px 0 30px;
     }
 
     .rightcolumnblank{
+        flex:50%;
+        min-width:300px;
+        max-width:500px;
+        margin:0 30px 0 30px;
+    }
+    .rightcolumnblankinternal{
         flex:25%;
-        margin:0;
+        min-width:200px;
+        max-width:500px;
+        margin:0 15px 0 0;
     }
     ul.chardesclist {
         border-left:5px solid #000000;
@@ -582,18 +832,47 @@ p.outcome{
         margin-left:30px;
     }
     li.chardesclist{
-        font-size:12pt;
-        padding-right:10px;
+        font-size:14pt;
+        margin-right:10px;
+        padding-bottom:2px;
     }
     .likes {
         flex:25%;
-        margin-right:30px;
+        margin-right:15px;
     }
 
     .dislikes {
         flex:25%;
+        margin-right:15px;
     }
-
+    ul.sig{
+        padding:10px 30px 30px 30px;
+        border-top:3px solid #000000;
+    }
+    
+    li.sig{
+        list-style-type: square;
+        font-size:14pt;
+        padding-bottom:2px;
+    }
+    p.outcome{
+        font-family:"Bebas Neue", Arial, sans-serif;
+        background-color: #fcba03;
+        font-size:40pt;
+        display:inline;
+        padding:10px;
+        margin-top:30px;
+    }
+    li.borderlist{
+        margin-left:10px;
+        font-size:16pt;
+        padding-bottom:2px;
+    }
+    li.battlelist{
+        margin-left:30px;
+        font-size:14pt;
+    
+    }
 }
 
   @media all and (min-width:768px){
@@ -635,6 +914,17 @@ p.outcome{
             /*background: rgb(255,255,255);
             background: linear-gradient(180deg, rgba(255,255,255,1) 87%, rgba(218,226,228,1) 100%);*/
 
+        }
+        li.nav1 {
+            margin:30px;
+            padding:15px;
+            display: inline;
+            font-family:"Bebas Neue", Arial, sans-serif;
+            font-size:24pt;
+            letter-spacing:2px;
+            background-color: #fcba03;
+            border-bottom:3px solid #000000;
+            border-left:3px solid #000000;
         }
         a.nav {
             text-decoration: none;
