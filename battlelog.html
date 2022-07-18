@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page serves as a record of each battle the Thunderbuns have had in the current campaign, providing key details such as parties involved and the outcome.">
     <title>The Crew</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +14,7 @@
     <header>
         <!--Begin title/header-->
         <section>
-            <img src="/images/TempLogo.jpg" class="logo" alt="An image of three red first-edition Dungeons and Dragons manuals on a white tablecloth, next to a blue bag of dice. The dice are spilling out of the bag, artfully arranged by the edge of the manuals.">
+            <img src="/images/TempLogo.webp" class="logo" alt="An image of three red first-edition Dungeons and Dragons manuals on a white tablecloth, next to a blue bag of dice. The dice are spilling out of the bag, artfully arranged by the edge of the manuals.">
             <h1>Thunderbuns</h1>
             <p class="subtitle">Primal Fear in Nettep: The Quest for Knot's Tree</p>
         </section>
@@ -36,7 +37,7 @@
     <div class="contentwrapper">
     <section class="bodytext">
         <!--Intro Text Div-->
-        <div>
+        <div id="top">
             <h2>Battle and Encounter Log</h2>
                 <p>Below is a running list of the battles and encounters fought in this campaign thus far. Expand each week to see a list of battles/encounters, and click again on each battle/encounter's name for more information about the specific incident. Use the form below to submit an entry.</p>
         </div>
@@ -56,10 +57,10 @@
                 </li>
                 <li>
                   <label for="desc">Battle Description<span class="inst">Provide details about the battle, such as who was involved, any highlights, and the outcome.</span></label>
-                  <textarea id="text" name="desc"  class="form-input" minlength="30" max length="500" rows="5" required> </textarea>
+                  <textarea id="desc" name="desc"  class="form-input" minlength="30" max length="500" rows="5" required> </textarea>
                 </li>
                 <li>
-                    <label for="desc">Your Email<span class="inst">Enter a valid email address, so we can reach out to you if we have any questions.</span></label>
+                    <label for="email">Your Email<span class="inst">Enter a valid email address, so we can reach out to you if we have any questions.</span></label>
                     <input type="email" id="email" name="email" required class="form-input">
                   </li>
                </ul>
@@ -274,7 +275,11 @@
             
         </div>
     </section>
+    
 </div>
+<section class="bodytext">
+    <h4><a class="links" href="#top"> &uarr; Return to the top of the page.</a></h4>
+</section>
     <!--Begin Footer-->
     <footer>
         <p class="footerleft">This site is made for recreational/fan purposes only, and in no way claims any ownership of any Dungeons and Dragons source material. The temporary logo is by <a href="https://www.flickr.com/photos/42913062@N07/4891410215" class="footerlink">Jenny Ivins</a>, and is used under the <a href="https://creativecommons.org/licenses/by-nc-sa/2.0/" class="footerlink">CC BY-NC-SA 2.0 license</a>.</p>
