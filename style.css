@@ -137,7 +137,6 @@ li.nav1 {
 }
 a.nav {
     text-decoration: none;
-    font-style:bold;
     color:#000000;
 }
 
@@ -280,11 +279,9 @@ h1 {
 h2 {
     font-family:"Raleway", Arial, sans-serif;
     font-size:22pt;
-    text-decoration:bold;
     padding-bottom:30px;
     padding-top:30px;
-    /*border-left:3px solid #000000;
-    border-bottom:3px solid #000000;*/
+   
 }
 
 h3 {
@@ -298,7 +295,6 @@ h3 {
 h4 {
     font-family:"Raleway", arial, sans-serif;
     font-size:14pt;
-    font-style:bold;
     padding-bottom:5px;
 }
 span.charsubtitle {
@@ -323,11 +319,11 @@ span.npcoutcome{
     padding:0 0 30px 30px;
     margin:0;
     font-style:italic;
-    font-weight:300px;
+    font-weight:300;
 }
 p,li {
     font-family:"Raleway", Arial, sans-serif;
-    font-size:14pt;
+    font-size:12pt;
     line-height: 1.5em;
     font-weight:300;
     padding-bottom:5px;
@@ -366,7 +362,7 @@ hr.header3{
 
 /*Link styles*/
 a.links {
-    font-weight:300px;
+    font-weight:300;
     color:#000000;
 }
 
@@ -601,7 +597,7 @@ p.outcome{
         padding:0 0 50px 30px;
         margin:0;
         font-style:italic;
-        font-weight:300px;
+        font-weight:300;
     }
     h2 {
         font-family:"Raleway", Arial, sans-serif;
@@ -609,8 +605,6 @@ p.outcome{
         font-weight:bold;
         padding-bottom:15px;
         padding-top:30px;
-        /*border-left:3px solid #000000;
-        border-bottom:3px solid #000000;*/
     }
     h3 {
         font-family:"Bebas Neue", arial, sans-serif;
@@ -622,7 +616,6 @@ p.outcome{
     h4 {
         font-family:"Raleway", arial, sans-serif;
         font-size:18pt;
-        font-style:bold;
         padding-bottom:10px;
     }
     p,li {
@@ -928,7 +921,6 @@ p.outcome{
         }
         a.nav {
             text-decoration: none;
-            font-style:bold;
             color:#000000;
         }
         .toggle {
